@@ -1,0 +1,6 @@
+[user]
+	email = michel@voorkanter.com
+	name = mahulst
+[core]
+	editor = emacsclient -nw
+	excludesfile = /Users/michelvanderhulst/.gitignore_global
