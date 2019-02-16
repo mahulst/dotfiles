@@ -1,6 +1,6 @@
 . ~/z/z.sh
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/michelvanderhulst/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -55,7 +55,7 @@ plugins=(
 
 # User configuration
 
-export PATH="/Users/michelvanderhulst/bin:/Users/michelvanderhulst/bin:/Users/michelvanderhulst/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
+export PATH="~/bin:~/bin:~/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -92,13 +92,12 @@ export EDITOR='emacsclient -nw'
 export GPG_TTY=$(tty)
 alias sudo='sudo '
 export WORKON_HOME=~/Envs
-source /usr/local/bin/virtualenvwrapper.sh
 function emulator { ( cd "$(dirname "$(whence -p emulator)")" && ./emulator "$@"; ) }
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export ANSIBLE_VAULT_PASSWORD_FILE=/Users/michelvanderhulst/.schiphol-ansible-vault
+export ANSIBLE_VAULT_PASSWORD_FILE=~/.schiphol-ansible-vault
 export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
+. "$NVM_DIR/nvm.sh"
 
 fpath=(~/.zsh/completion $fpath)
 
